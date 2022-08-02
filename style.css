@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -52,6 +52,12 @@ main img {
   width: 100%;
 }
 
+.group img {
+  align-content: space-between;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
 .item-double {
   flex: 2;
 }
@@ -68,6 +74,8 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul {
@@ -139,7 +147,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 600px) {
 
   header {
     display: flex;
@@ -162,6 +170,7 @@ footer p {
   form div {
     flex-direction: column;
     flex: 1;
+    margin: 20px;
   }
 
   form button {
@@ -170,6 +179,44 @@ footer p {
     flex: 0.5;
   }
 
+  .group {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .group2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .item2 {
+    flex: 0 48%;
+    margin-bottom: 2%;
+
+  }
+
+  .group img {
+    width: 25%;
+    height: 25%; 
+    padding-right: 15px;
+  }
+
+  .group3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  .group3 img {
+    width: 50%;
+  }
+
+  
 
 
  
