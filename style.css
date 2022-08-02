@@ -147,11 +147,12 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 600px) {
 
   header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .logo {
@@ -165,6 +166,7 @@ footer p {
   form {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   form div {
