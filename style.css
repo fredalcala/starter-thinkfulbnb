@@ -147,7 +147,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 480px) {
 
   header {
     display: flex;
@@ -157,10 +157,12 @@ footer p {
 
   .logo {
     padding-bottom: 10px;
+    font-size: 10vmin;
   }
 
   header nav ul{ 
     padding-top: 10px;
+    flex-wrap: wrap;
   }
   
   form {
